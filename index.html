@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anúncio</title>
+    <style>
+        /* Remove margens e preenchimentos de todos os elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Faz o HTML e o corpo ocuparem 100% da tela */
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Esconde barras de rolagem */
+        }
+
+        /* Contêiner do anúncio que ocupa a tela inteira */
+        .ad-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ad-container">
+        <!-- SEU CÓDIGO DE ANÚNCIO AQUI -->
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '916df487937e4517c92615ca6a3202ac',
+                'format' : 'iframe',
+                'height' : 300, /* Ajustado para um banner maior, a rede pode ajustar isso */
+                'width' : 160, /* Ajustado para um banner maior, a rede pode ajustar isso */
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/916df487937e4517c92615ca6a3202ac/invoke.js"></script>
+    </div>
+
+</body>
+</html>
