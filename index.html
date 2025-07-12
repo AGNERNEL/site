@@ -3,56 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página com Anúncios</title>
+    <title>Anúncio</title>
     <style>
-        /* Estilos básicos para a página */
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+        /* Remove margens e preenchimentos de todos os elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        header, footer {
-            background-color: #f2f2f2;
-            padding: 10px;
+
+        /* Faz o HTML e o corpo ocuparem 100% da tela */
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Esconde barras de rolagem */
+        }
+
+        /* Contêiner do anúncio que ocupa a tela inteira */
+        .ad-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-        }
-        .conteudo {
-            margin-top: 20px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-    </header>
-
-    <div class="conteudo">
-        <h2>Conteúdo Principal</h2>
-        <p>Este é um parágrafo de exemplo no corpo do seu site. O bloco de anúncios será exibido abaixo.</p>
-        
-        <!-- CÓDIGO DO SEU ANÚNCIO DO GOOGLE ADSENSE COMEÇA AQUI -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4750678021250177"
-             crossorigin="anonymous"></script>
-        <!-- ANUNCIOS -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4750678021250177"
-             data-ad-slot="4214401502"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
+    <div class="ad-container">
+        <!-- SEU CÓDIGO DE ANÚNCIO AQUI -->
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '916df487937e4517c92615ca6a3202ac',
+                'format' : 'iframe',
+                'height' : 300, /* Ajustado para um banner maior, a rede pode ajustar isso */
+                'width' : 160, /* Ajustado para um banner maior, a rede pode ajustar isso */
+                'params' : {}
+            };
         </script>
-        <!-- FIM DO CÓDIGO DO ANÚNCIO -->
-
-        <p>Mais conteúdo pode ser adicionado aqui, abaixo do anúncio, para preencher sua página.</p>
+        <script type="text/javascript" src="//www.highperformanceformat.com/916df487937e4517c92615ca6a3202ac/invoke.js"></script>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Seu Nome ou Nome do Site</p>
-    </footer>
 
 </body>
 </html>
